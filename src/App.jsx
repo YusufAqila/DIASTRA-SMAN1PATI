@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Navigation from './components/Navigation.jsx';
 import teamsData from './data/teams.js';
 import Team from './components/Team.jsx';
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <header>
-        <h1 className="text-3xl font-bold underline">DIASTRA SMAN 1 Pati</h1>
+        <Navigation />
       </header>
 
       <main>
