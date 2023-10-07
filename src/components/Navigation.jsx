@@ -1,10 +1,9 @@
-import logoSman1Pati from '../assets/logoSman1Pati.png';
-function Navigation() {
+function Navigation({ logo }) {
   return (
     <>
-      <nav className="flex p-5">
+      <nav className="flex p-5 hidden">
         <img
-          src={logoSman1Pati}
+          src={logo}
           alt="Logo SMAN 1 Pati"
           title="SMAN 1 Pati"
           className="w-10"
