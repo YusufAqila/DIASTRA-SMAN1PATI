@@ -1,5 +1,5 @@
 import backgroundImage from '../assets/bgByDave.jpg';
-import homepageImage from '../assets/hero.webp';
+import homepageImage from '../assets/heroWithBlobGreen.webp';
 function HomePage({ logo }) {
   return (
     <div
@@ -23,11 +23,15 @@ function HomePage({ logo }) {
         </div>
         <div className="h-[90vh]  w-screen flex flex-col-reverse md:flex-row items-center justify-evenly">
           <div className="flex  flex-col items-center">
-            <h3 className="text-white font-[poppins] font-medium text-2xl md:text-4xl md:text-left  text-center">
+            <h3 className="text-white font-[poppins] font-medium text-2xl md:text-5xl md:text-left  text-center">
               Gerakan Lindungi <br className="hidden md:block"></br> Bumi Kita!
             </h3>
           </div>
-          <img src={homepageImage} alt="Menanam" className="w-[350px]" />
+          <img
+            src={homepageImage}
+            alt="Menanam"
+            className="w-[270px] md:w-[350px]"
+          />
         </div>
       </div>
     </div>
