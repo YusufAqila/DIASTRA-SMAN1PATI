@@ -1,4 +1,5 @@
 import backgroundImage from '../assets/bgByDave.jpg';
+import homepageImage from '../assets/environtmentImage.svg';
 function HomePage({ logo }) {
   return (
     <div
@@ -18,8 +19,11 @@ function HomePage({ logo }) {
           />
         </div>
         <div className="h-[90vh] border border-black w-screen flex flex-col">
-          <h3>Selamat Datang!</h3>
-          <h1>DIASTRA SMAN 1 Pati</h1>
+          <img src={homepageImage} alt="Menanam" />
+          <div>
+            <h3>Selamat Datang!</h3>
+            <h1>DIASTRA SMAN 1 Pati</h1>
+          </div>
         </div>
       </div>
     </div>
