@@ -22,11 +22,7 @@ function App() {
   // }, []);
   return (
     <>
-      <header
-        className={`${
-          isScrolled ? 'bg-white text-black' : 'backdrop-blur-md text-white'
-        } border-white border-b-[1px] top-0 fixed z-50`}
-      >
+      <header className={`top-0 fixed z-50`}>
         <Navigation logo={logoSman1Pati} />
       </header>
       <main>
