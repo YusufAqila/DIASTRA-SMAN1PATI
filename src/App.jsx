@@ -7,12 +7,14 @@ import logoSman1Pati from './assets/logoSman1Pati.png';
 function App() {
   const [count, setCount] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [keyword, setKeyword] = useState('');
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     setIsScrolled(scrollTop > 50);
   };
-
+  const changeKeyword = (newKeyword) => {
+    setKeyword(newKeyword);
+  };
   // useEffect(() => {
   //   window.addEventListener('scroll', handleScroll);
 
@@ -22,21 +24,28 @@ function App() {
   // }, []);
   return (
     <>
-      <header className={`top-0 fixed z-50`}>
-        <Navigation logo={logoSman1Pati} />
-      </header>
       <main>
         <HomePage logo={logoSman1Pati} />
-        <div className="w-screen flex flex-row flex-wrap justify-center gap-2 bg-white">
-          {teamsData.map((team, index) => (
-            <Team key={index} title={team.title}>
-              {team.members.map((member, memberIndex) => (
-                <ul>
-                  <li key={memberIndex}>{member}</li>
-                </ul>
-              ))}
-            </Team>
-          ))}
+        <div className="w-screen flex flex-row flex-wrap justify-center gap-2 bg-white backdrop-blur-md rounded-t-[50px]">
+          <Navigation
+            logo={logoSman1Pati}
+            changeKeyword={changeKeyword}
+            keyword={keyword}
+          />
+          {teamsData.map((team, index) =>
+            team.title.toLowerCase().includes(keyword) ||
+            team.members.some((member) =>
+              member.toLowerCase().includes(keyword)
+            ) ? (
+              <Team key={index} title={team.title}>
+                {team.members.map((member, memberIndex) => (
+                  <ul>
+                    <li key={memberIndex}>{member}</li>
+                  </ul>
+                ))}
+              </Team>
+            ) : null
+          )}
         </div>
       </main>
     </>
