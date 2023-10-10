@@ -7,7 +7,7 @@ function HomePage({ logo }) {
         backgroundImage: `url(${backgroundImage})`,
         height: '100vh',
       }}
-      className="flex items-center justify-center"
+      className="flex items-center justify-center sticky top-0"
     >
       <div className="backdrop-blur-sm backdrop-brightness-75 h-screen w-screen flex  items-center flex-col">
         <div className=" w-screen pl-5 md:pl-7 py-5 md:py-7 min-h-[10vh] flex items-center gap-5">

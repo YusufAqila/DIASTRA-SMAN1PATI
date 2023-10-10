@@ -27,7 +27,7 @@ function App() {
       </header>
       <main>
         <HomePage logo={logoSman1Pati} />
-        <div className="w-screen flex flex-row flex-wrap justify-center gap-2">
+        <div className="w-screen flex flex-row flex-wrap justify-center gap-2 bg-white">
           {teamsData.map((team, index) => (
             <Team key={index} title={team.title}>
               {team.members.map((member, memberIndex) => (
