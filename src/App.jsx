@@ -26,7 +26,7 @@ function App() {
     <>
       <main>
         <HomePage logo={logoSman1Pati} />
-        <div className="w-screen flex flex-row flex-wrap justify-center gap-2 bg-white backdrop-blur-md rounded-t-[50px]">
+        <div className="w-screen flex flex-row flex-wrap justify-center gap-2 bg-white/50 backdrop-blur-md rounded-t-[50px]">
           <Navigation
             logo={logoSman1Pati}
             changeKeyword={changeKeyword}
@@ -39,9 +39,7 @@ function App() {
             ) ? (
               <Team key={index} title={team.title}>
                 {team.members.map((member, memberIndex) => (
-                  <ul>
-                    <li key={memberIndex}>{member}</li>
-                  </ul>
+                  <li key={memberIndex}>{member}</li>
                 ))}
               </Team>
             ) : null
