@@ -4,7 +4,7 @@ function HomePage({ logo }) {
   return (
     <div className="flex items-center justify-center">
       <div className="backdrop-blur-sm backdrop-brightness-75 h-screen w-full flex  items-center flex-col">
-        <div className=" w-full pl-5 md:pl-7 py-5 md:py-7 min-h-[10vh] flex items-center gap-5 justify-center md:justify-start">
+        <div className=" w-full pl-5 md:pl-7 py-5 md:py-7 min-h-[10vh] flex items-center gap-2 md:gap-5 justify-center md:justify-start">
           <img
             src={logo}
             alt="Logo SMAN 1 Pati"
