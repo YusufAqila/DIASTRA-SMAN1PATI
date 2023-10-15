@@ -9,7 +9,7 @@ function Navigation({ keyword, changeKeyword }) {
         placeholder="Cari Tim Kerja"
         value={keyword}
         onChange={handleSearch}
-        className="rounded-full px-4 py-2 backdrop-blur-lg bg-white/40 sticky top-2 my-8 border-2 border-white/40 box-border h-fit w-[80%] z-10 outline-none focus:shadow-[0px_0px_0px_4px_rgba(9,140,9,.3)] placeholder:text-black/70 font-[poppins] font-semibold"
+        className="rounded-full px-4 py-2 backdrop-blur-lg bg-white/40 my-8 border-2 border-white/40 box-border h-fit w-[80%] z-10 outline-none focus:shadow-[0px_0px_0px_4px_rgba(9,140,9,.3)] placeholder:text-black/70 font-[poppins] font-semibold"
       />
     </>
   );
