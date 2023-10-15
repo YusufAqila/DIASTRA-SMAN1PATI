@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import teamsData from './data/teams';
 import HomePage from './pages/HomePage';
 import logoSman1Pati from './assets/logoSman1Pati.png';
+import logoDiastra from './assets/logoDiastra.webp';
 import backgroundImage from './assets/bgByDave.jpg';
 function App() {
   const [count, setCount] = useState(0);
@@ -37,7 +38,7 @@ function App() {
         }}
         className="max-w-screen box-border overflow-x-hidden"
       >
-        <HomePage logo={logoSman1Pati} />
+        <HomePage logo={logoSman1Pati} logoDiastra={logoDiastra} />
         <div className="w-full min-h-screen flex flex-col items-center bg-white/20 backdrop-blur-lg relative pb-8 h-fit">
           <Navigation
             logo={logoSman1Pati}
