@@ -1,4 +1,4 @@
-function Navigation({ logo, keyword, changeKeyword }) {
+function Navigation({ keyword, changeKeyword }) {
   const handleSearch = (event) => {
     changeKeyword(event.target.value);
   };

@@ -38,7 +38,7 @@ function App() {
         className="max-w-screen box-border overflow-x-hidden"
       >
         <HomePage logo={logoSman1Pati} />
-        <div className="w-full min-h-screen flex flex-col items-center bg-white/20 backdrop-blur-lg sticky top-0">
+        <div className="w-full min-h-screen flex flex-col items-center bg-white/20 backdrop-blur-lg sticky top-0 pb-8">
           <Navigation
             logo={logoSman1Pati}
             changeKeyword={changeKeyword}
