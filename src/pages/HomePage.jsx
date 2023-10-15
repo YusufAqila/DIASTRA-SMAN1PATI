@@ -2,15 +2,9 @@ import backgroundImage from '../assets/bgByDave.jpg';
 import homepageImage from '../assets/heroWithBlobGreen.webp';
 function HomePage({ logo }) {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        height: '100vh',
-      }}
-      className="flex items-center justify-center sticky top-0"
-    >
-      <div className="backdrop-blur-sm backdrop-brightness-75 h-screen w-screen flex  items-center flex-col">
-        <div className=" w-screen pl-5 md:pl-7 py-5 md:py-7 min-h-[10vh] flex items-center gap-5">
+    <div className="flex items-center justify-center">
+      <div className="backdrop-blur-sm backdrop-brightness-75 h-screen w-full flex  items-center flex-col">
+        <div className=" w-full pl-5 md:pl-7 py-5 md:py-7 min-h-[10vh] flex items-center gap-5">
           <img
             src={logo}
             alt="Logo SMAN 1 Pati"

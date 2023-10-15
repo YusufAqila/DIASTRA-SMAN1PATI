@@ -4,23 +4,13 @@ function Navigation({ logo, keyword, changeKeyword }) {
   };
   return (
     <>
-      <nav className="flex p-3 backdrop-blur-md sticky top-2 mt-8 border border-black rounded-full w-[80%] box-border flex justify-evenly">
-        <img
-          src={logo}
-          alt="Logo SMAN 1 Pati"
-          title="SMAN 1 Pati"
-          className="w-10"
-        />
-        <h1 className="text-xl font-bold text-black text-center flex items-center font-[montserrat]">
-          DIASTRA SMAN 1 PATI
-        </h1>
-        <input
-          type="text"
-          placeholder="Cari Tim Kerja"
-          value={keyword}
-          onChange={handleSearch}
-        />
-      </nav>
+      <input
+        type="text"
+        placeholder="Cari Tim Kerja"
+        value={keyword}
+        onChange={handleSearch}
+        className="rounded-xl p-2 border-white flex p-3 backdrop-blur-lg bg-white/40 sticky top-2 my-8 border-2 border-white/40 rounded-full  box-border h-fit w-[80%] z-10 outline-none focus:shadow-[0px_0px_0px_4px_rgba(9,140,9,.3)]"
+      />
     </>
   );
 }
