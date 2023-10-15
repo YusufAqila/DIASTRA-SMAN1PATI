@@ -38,13 +38,13 @@ function App() {
         className="max-w-screen box-border overflow-x-hidden"
       >
         <HomePage logo={logoSman1Pati} />
-        <div className="w-full min-h-screen flex flex-col items-center bg-white/20 backdrop-blur-lg sticky top-0 pb-8">
+        <div className="w-full min-h-screen flex flex-col items-center bg-white/20 backdrop-blur-lg relative pb-8 h-fit">
           <Navigation
             logo={logoSman1Pati}
             changeKeyword={changeKeyword}
             keyword={keyword}
           />
-          <div className="flex flex-row flex-wrap w-full justify-evenly gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full gap-2 justify-items-center">
             {teamsData.map((team, index) =>
               team.title.toLowerCase().includes(keyword) ||
               team.members.some((member) =>
@@ -52,7 +52,7 @@ function App() {
               ) ? (
                 <Team key={index} title={team.title}>
                   {team.members.map((member, memberIndex) => (
-                    <li key={memberIndex} className="font-[lato]">
+                    <li key={memberIndex} className="font-[lato] font-medium">
                       {memberIndex + 1 + '. '} {member}
                     </li>
                   ))}
