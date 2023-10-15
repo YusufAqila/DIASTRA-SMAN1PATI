@@ -53,7 +53,7 @@ function App() {
                 <Team key={index} title={team.title}>
                   {team.members.map((member, memberIndex) => (
                     <li key={memberIndex} className="font-[lato]">
-                      {member}
+                      {memberIndex + 1 + '. '} {member}
                     </li>
                   ))}
                 </Team>
