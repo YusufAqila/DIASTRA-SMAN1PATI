@@ -18,7 +18,7 @@ function HomePage({ logo }) {
         <div className="h-[90vh] w-screen flex flex-col-reverse md:flex-row items-center justify-evenly">
           <div className="flex  flex-col items-center">
             <h3 className="text-white font-[poppins] font-semibold text-xl sm:text-3xl md:text-5xl md:text-left  text-center">
-              Gerakan Lindungi <br className="hidden md:block"></br> Bumi Kita!
+              Adiwiyata Castra <br className="hidden md:block"></br> Jayecwara
             </h3>
           </div>
           <img
